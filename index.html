@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Media Comparison Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Media Comparison Lab</h1>
+        <p>Group Members: Shakira Kahar, Nursyazleen Syazrina</p>
+    </header>
+
+    <!-- IMAGE COMPARISON -->
+    <section>
+        <h2>Image Format Comparison</h2>
+        <div class="media-row">
+            <div>
+                <h3>Original (PNG)</h3>
+                <img src="media/images/iium.png" alt="IIUM Image PNG">
+            </div>
+            <div>
+                <h3>Compressed (JPG)</h3>
+                <img src="media/images/iium.jpg" alxt="IIUM Image JPG">
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>File</th><th>Format</th><th>Size</th><th>Observations</th>
+            </tr>
+            <tr>
+                <td>iium.png</td><td>PNG</td><td>181 KB</td><td>Lossless, sharp</td>
+            </tr>
+            <tr>
+                <td>iium.jpg</td><td>JPG</td><td>162 KB</td><td>Lossy, slight artifacts</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- AUDIO COMPARISON -->
+    <section>
+        <h2>Audio Format Comparison</h2>
+        <div class="media-row">
+            <div>
+                <h3>Original (OGG)</h3>
+                <audio controls>
+                    <source src="media/audio/iium_original.ogg" type="audio/ogg">
+                </audio>
+            </div>
+            <div>
+                <h3>Compressed (MP3)</h3>
+                <audio controls>
+                    <source src="media/audio/iium_compressed.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>File</th><th>Format</th><th>Bitrate</th><th>File Size</th><th>Observations</th>
+            </tr>
+            <tr>
+                <td>iium_original.ogg</td><td>OGG</td><td>128 kbps</td><td>150 KB</td><td>High quality</td>
+            </tr>
+            <tr>
+                <td>iium_compressed.mp3</td><td>MP3</td><td>64 kbps</td><td>291 KB</td><td>Lower quality</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- VIDEO COMPARISON -->
+    <section>
+        <h2>Video Format Comparison</h2>
+        <div class="media-row">
+            <div>
+                <h3>Original Video (MP4)</h3>
+                <video width="480" controls>
+                    <source src="media/video/iium_original.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>File</th><th>Format</th><th>Resolution</th><th>File Size</th><th>Observations</th>
+            </tr>
+            <tr>
+                <td>iium_original.mp4</td>
+                <td>MP4</td>
+                <td>1920x1080</td>
+                <td>4.98 MB</td>
+                <td>Original high-quality video embedded in webpage</td>
+            </tr>
+            <tr>
+                <td>iium_comparison.avi</td>
+                <td>AVI</td>
+                <td>1920x1080</td>
+                <td>3.44 MB</td>
+                <td>Converted from MP4, included for format comparison; usually larger file</td>
+            </tr>
+        </table>
+
+        <button onclick="toggleVideoDetails()">Show/Hide Video Observations</button>
+        <div id="videoDetails" style="display:none;">
+            <p>AVI is not embedded in the browser because it is not widely supported. MP4 is embedded for playback. File size comparison shows compression efficiency.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© IIUM Multimedia Lab Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
